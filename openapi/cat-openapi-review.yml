@@ -1,0 +1,2712 @@
+executed: '2025-02-14T01:12:51.102Z'
+results:
+  - code: openapi-external-docs-error
+    message: OpenAPI MUST Have External Documentation
+    path: []
+    severity: 0
+    range:
+      start:
+        line: 0
+        character: 0
+      end:
+        line: 204
+        character: 42
+  - code: openapi-tags-object-error
+    message: OpenAPIs MUST Have a Tag Object
+    path: []
+    severity: 0
+    range:
+      start:
+        line: 0
+        character: 0
+      end:
+        line: 204
+        character: 42
+  - code: openapi-info-contact-error
+    message: Info MUST Have Contact Object
+    path:
+      - info
+    severity: 0
+    range:
+      start:
+        line: 1
+        character: 5
+      end:
+        line: 4
+        character: 16
+  - code: openapi-info-license-error
+    message: Info MUST Have License
+    path:
+      - info
+    severity: 0
+    range:
+      start:
+        line: 1
+        character: 5
+      end:
+        line: 4
+        character: 16
+  - code: openapi-info-terms-of-service-error
+    message: Info MUST Have Terms of Service
+    path:
+      - info
+    severity: 0
+    range:
+      start:
+        line: 1
+        character: 5
+      end:
+        line: 4
+        character: 16
+  - code: openapi-info-title-info
+    message: Info Has Title
+    path:
+      - info
+      - title
+    severity: 2
+    range:
+      start:
+        line: 2
+        character: 9
+      end:
+        line: 2
+        character: 35
+  - code: openapi-info-title-upper-case-info
+    message: Info Title MUST Have First Characters Capitalized
+    path:
+      - info
+      - title
+    severity: 2
+    range:
+      start:
+        line: 2
+        character: 9
+      end:
+        line: 2
+        character: 35
+  - code: openapi-info-description-info
+    message: Info Has Description
+    path:
+      - info
+      - description
+    severity: 2
+    range:
+      start:
+        line: 3
+        character: 15
+      end:
+        line: 3
+        character: 58
+  - code: openapi-info-version-info
+    message: Info Has Version
+    path:
+      - info
+      - version
+    severity: 2
+    range:
+      start:
+        line: 4
+        character: 11
+      end:
+        line: 4
+        character: 16
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - /{pageNumber}
+    severity: 0
+    range:
+      start:
+        line: 9
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - /{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 9
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - /{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 9
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+    severity: 2
+    range:
+      start:
+        line: 10
+        character: 8
+      end:
+        line: 21
+        character: 42
+  - code: openapi-operation-security-definitions-error
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 10
+        character: 8
+      end:
+        line: 21
+        character: 42
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 10
+        character: 8
+      end:
+        line: 21
+        character: 42
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 10
+        character: 8
+      end:
+        line: 21
+        character: 42
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 11
+        character: 15
+      end:
+        line: 11
+        character: 33
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 11
+        character: 15
+      end:
+        line: 11
+        character: 33
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 12
+        character: 19
+      end:
+        line: 12
+        character: 57
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 1
+    range:
+      start:
+        line: 14
+        character: 10
+      end:
+        line: 18
+        character: 25
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 14
+        character: 10
+      end:
+        line: 18
+        character: 25
+  - code: openapi-response-get-400-status-code-error
+    message: GET Responses MUST Have 400 Status Codes
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 19
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-response-get-401-status-code-error
+    message: GET Responses Has 401 Status Code
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 19
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 19
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 19
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 19
+        character: 16
+      end:
+        line: 21
+        character: 42
+  - code: openapi-response-get-200-content-error
+    message: GET 200 Response MUST Have Content.
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 0
+    range:
+      start:
+        line: 20
+        character: 14
+      end:
+        line: 21
+        character: 42
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 20
+        character: 14
+      end:
+        line: 21
+        character: 42
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - /{pageNumber}
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 21
+        character: 23
+      end:
+        line: 21
+        character: 42
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+    severity: 0
+    range:
+      start:
+        line: 22
+        character: 59
+      end:
+        line: 44
+        character: 42
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+    severity: 2
+    range:
+      start:
+        line: 22
+        character: 59
+      end:
+        line: 44
+        character: 42
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+    severity: 2
+    range:
+      start:
+        line: 22
+        character: 59
+      end:
+        line: 44
+        character: 42
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+    severity: 2
+    range:
+      start:
+        line: 23
+        character: 8
+      end:
+        line: 44
+        character: 42
+  - code: openapi-operation-security-definitions-error
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 23
+        character: 8
+      end:
+        line: 44
+        character: 42
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 23
+        character: 8
+      end:
+        line: 44
+        character: 42
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 23
+        character: 8
+      end:
+        line: 44
+        character: 42
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 24
+        character: 15
+      end:
+        line: 24
+        character: 37
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 24
+        character: 15
+      end:
+        line: 24
+        character: 37
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 25
+        character: 19
+      end:
+        line: 25
+        character: 73
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 1
+    range:
+      start:
+        line: 27
+        character: 10
+      end:
+        line: 31
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 27
+        character: 10
+      end:
+        line: 31
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 1
+    range:
+      start:
+        line: 32
+        character: 10
+      end:
+        line: 36
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 0
+    range:
+      start:
+        line: 32
+        character: 10
+      end:
+        line: 36
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 1
+    range:
+      start:
+        line: 37
+        character: 10
+      end:
+        line: 41
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 0
+    range:
+      start:
+        line: 37
+        character: 10
+      end:
+        line: 41
+        character: 24
+  - code: openapi-response-get-400-status-code-error
+    message: GET Responses MUST Have 400 Status Codes
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 42
+        character: 16
+      end:
+        line: 44
+        character: 42
+  - code: openapi-response-get-401-status-code-error
+    message: GET Responses Has 401 Status Code
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 42
+        character: 16
+      end:
+        line: 44
+        character: 42
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 42
+        character: 16
+      end:
+        line: 44
+        character: 42
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 42
+        character: 16
+      end:
+        line: 44
+        character: 42
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 42
+        character: 16
+      end:
+        line: 44
+        character: 42
+  - code: openapi-response-get-200-content-error
+    message: GET 200 Response MUST Have Content.
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+      - '200'
+    severity: 0
+    range:
+      start:
+        line: 43
+        character: 14
+      end:
+        line: 44
+        character: 42
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 43
+        character: 14
+      end:
+        line: 44
+        character: 42
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 44
+        character: 23
+      end:
+        line: 44
+        character: 42
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 0
+    range:
+      start:
+        line: 45
+        character: 107
+      end:
+        line: 84
+        character: 42
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 45
+        character: 107
+      end:
+        line: 84
+        character: 42
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 45
+        character: 107
+      end:
+        line: 84
+        character: 42
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 2
+    range:
+      start:
+        line: 46
+        character: 8
+      end:
+        line: 84
+        character: 42
+  - code: openapi-operation-security-definitions-error
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 46
+        character: 8
+      end:
+        line: 84
+        character: 42
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 46
+        character: 8
+      end:
+        line: 84
+        character: 42
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 46
+        character: 8
+      end:
+        line: 84
+        character: 42
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 47
+        character: 15
+      end:
+        line: 47
+        character: 30
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 47
+        character: 15
+      end:
+        line: 47
+        character: 30
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 48
+        character: 19
+      end:
+        line: 48
+        character: 70
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 1
+    range:
+      start:
+        line: 50
+        character: 10
+      end:
+        line: 54
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 50
+        character: 10
+      end:
+        line: 54
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 1
+    range:
+      start:
+        line: 55
+        character: 10
+      end:
+        line: 59
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 0
+    range:
+      start:
+        line: 55
+        character: 10
+      end:
+        line: 59
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 1
+    range:
+      start:
+        line: 60
+        character: 10
+      end:
+        line: 64
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 0
+    range:
+      start:
+        line: 60
+        character: 10
+      end:
+        line: 64
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 1
+    range:
+      start:
+        line: 65
+        character: 10
+      end:
+        line: 70
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 0
+    range:
+      start:
+        line: 65
+        character: 10
+      end:
+        line: 70
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 1
+    range:
+      start:
+        line: 71
+        character: 10
+      end:
+        line: 76
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 0
+    range:
+      start:
+        line: 71
+        character: 10
+      end:
+        line: 76
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 1
+    range:
+      start:
+        line: 77
+        character: 10
+      end:
+        line: 81
+        character: 25
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 0
+    range:
+      start:
+        line: 77
+        character: 10
+      end:
+        line: 81
+        character: 25
+  - code: openapi-response-get-400-status-code-error
+    message: GET Responses MUST Have 400 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 82
+        character: 16
+      end:
+        line: 84
+        character: 42
+  - code: openapi-response-get-401-status-code-error
+    message: GET Responses Has 401 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 82
+        character: 16
+      end:
+        line: 84
+        character: 42
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 82
+        character: 16
+      end:
+        line: 84
+        character: 42
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 82
+        character: 16
+      end:
+        line: 84
+        character: 42
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 82
+        character: 16
+      end:
+        line: 84
+        character: 42
+  - code: openapi-response-get-200-content-error
+    message: GET 200 Response MUST Have Content.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 0
+    range:
+      start:
+        line: 83
+        character: 14
+      end:
+        line: 84
+        character: 42
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 83
+        character: 14
+      end:
+        line: 84
+        character: 42
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 84
+        character: 23
+      end:
+        line: 84
+        character: 42
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 0
+    range:
+      start:
+        line: 85
+        character: 110
+      end:
+        line: 124
+        character: 42
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 85
+        character: 110
+      end:
+        line: 124
+        character: 42
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 85
+        character: 110
+      end:
+        line: 124
+        character: 42
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 2
+    range:
+      start:
+        line: 86
+        character: 8
+      end:
+        line: 124
+        character: 42
+  - code: openapi-operation-security-definitions-error
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 86
+        character: 8
+      end:
+        line: 124
+        character: 42
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 86
+        character: 8
+      end:
+        line: 124
+        character: 42
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 86
+        character: 8
+      end:
+        line: 124
+        character: 42
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 87
+        character: 15
+      end:
+        line: 87
+        character: 32
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 87
+        character: 15
+      end:
+        line: 87
+        character: 32
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 88
+        character: 19
+      end:
+        line: 88
+        character: 61
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 1
+    range:
+      start:
+        line: 90
+        character: 10
+      end:
+        line: 94
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 90
+        character: 10
+      end:
+        line: 94
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 1
+    range:
+      start:
+        line: 95
+        character: 10
+      end:
+        line: 99
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 0
+    range:
+      start:
+        line: 95
+        character: 10
+      end:
+        line: 99
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 1
+    range:
+      start:
+        line: 100
+        character: 10
+      end:
+        line: 104
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 0
+    range:
+      start:
+        line: 100
+        character: 10
+      end:
+        line: 104
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 1
+    range:
+      start:
+        line: 105
+        character: 10
+      end:
+        line: 110
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 0
+    range:
+      start:
+        line: 105
+        character: 10
+      end:
+        line: 110
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 1
+    range:
+      start:
+        line: 111
+        character: 10
+      end:
+        line: 116
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 0
+    range:
+      start:
+        line: 111
+        character: 10
+      end:
+        line: 116
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 1
+    range:
+      start:
+        line: 117
+        character: 10
+      end:
+        line: 121
+        character: 25
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 0
+    range:
+      start:
+        line: 117
+        character: 10
+      end:
+        line: 121
+        character: 25
+  - code: openapi-response-get-400-status-code-error
+    message: GET Responses MUST Have 400 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 122
+        character: 16
+      end:
+        line: 124
+        character: 42
+  - code: openapi-response-get-401-status-code-error
+    message: GET Responses Has 401 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 122
+        character: 16
+      end:
+        line: 124
+        character: 42
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 122
+        character: 16
+      end:
+        line: 124
+        character: 42
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 122
+        character: 16
+      end:
+        line: 124
+        character: 42
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 122
+        character: 16
+      end:
+        line: 124
+        character: 42
+  - code: openapi-response-get-200-content-error
+    message: GET 200 Response MUST Have Content.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 0
+    range:
+      start:
+        line: 123
+        character: 14
+      end:
+        line: 124
+        character: 42
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 123
+        character: 14
+      end:
+        line: 124
+        character: 42
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 124
+        character: 23
+      end:
+        line: 124
+        character: 42
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 0
+    range:
+      start:
+        line: 125
+        character: 113
+      end:
+        line: 164
+        character: 42
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 125
+        character: 113
+      end:
+        line: 164
+        character: 42
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 125
+        character: 113
+      end:
+        line: 164
+        character: 42
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 2
+    range:
+      start:
+        line: 126
+        character: 8
+      end:
+        line: 164
+        character: 42
+  - code: openapi-operation-security-definitions-error
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 126
+        character: 8
+      end:
+        line: 164
+        character: 42
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 126
+        character: 8
+      end:
+        line: 164
+        character: 42
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 126
+        character: 8
+      end:
+        line: 164
+        character: 42
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 127
+        character: 15
+      end:
+        line: 127
+        character: 32
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 127
+        character: 15
+      end:
+        line: 127
+        character: 32
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 128
+        character: 19
+      end:
+        line: 128
+        character: 60
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 1
+    range:
+      start:
+        line: 130
+        character: 10
+      end:
+        line: 134
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 130
+        character: 10
+      end:
+        line: 134
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 1
+    range:
+      start:
+        line: 135
+        character: 10
+      end:
+        line: 139
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 0
+    range:
+      start:
+        line: 135
+        character: 10
+      end:
+        line: 139
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 1
+    range:
+      start:
+        line: 140
+        character: 10
+      end:
+        line: 144
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 0
+    range:
+      start:
+        line: 140
+        character: 10
+      end:
+        line: 144
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 1
+    range:
+      start:
+        line: 145
+        character: 10
+      end:
+        line: 150
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 0
+    range:
+      start:
+        line: 145
+        character: 10
+      end:
+        line: 150
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 1
+    range:
+      start:
+        line: 151
+        character: 10
+      end:
+        line: 156
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 0
+    range:
+      start:
+        line: 151
+        character: 10
+      end:
+        line: 156
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 1
+    range:
+      start:
+        line: 157
+        character: 10
+      end:
+        line: 161
+        character: 25
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 0
+    range:
+      start:
+        line: 157
+        character: 10
+      end:
+        line: 161
+        character: 25
+  - code: openapi-response-get-400-status-code-error
+    message: GET Responses MUST Have 400 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 162
+        character: 16
+      end:
+        line: 164
+        character: 42
+  - code: openapi-response-get-401-status-code-error
+    message: GET Responses Has 401 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 162
+        character: 16
+      end:
+        line: 164
+        character: 42
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 162
+        character: 16
+      end:
+        line: 164
+        character: 42
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 162
+        character: 16
+      end:
+        line: 164
+        character: 42
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 162
+        character: 16
+      end:
+        line: 164
+        character: 42
+  - code: openapi-response-get-200-content-error
+    message: GET 200 Response MUST Have Content.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 0
+    range:
+      start:
+        line: 163
+        character: 14
+      end:
+        line: 164
+        character: 42
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 163
+        character: 14
+      end:
+        line: 164
+        character: 42
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 164
+        character: 23
+      end:
+        line: 164
+        character: 42
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 0
+    range:
+      start:
+        line: 165
+        character: 119
+      end:
+        line: 204
+        character: 42
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 165
+        character: 119
+      end:
+        line: 204
+        character: 42
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+    severity: 2
+    range:
+      start:
+        line: 165
+        character: 119
+      end:
+        line: 204
+        character: 42
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 2
+    range:
+      start:
+        line: 166
+        character: 8
+      end:
+        line: 204
+        character: 42
+  - code: openapi-operation-security-definitions-error
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 166
+        character: 8
+      end:
+        line: 204
+        character: 42
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 166
+        character: 8
+      end:
+        line: 204
+        character: 42
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+    severity: 0
+    range:
+      start:
+        line: 166
+        character: 8
+      end:
+        line: 204
+        character: 42
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 167
+        character: 15
+      end:
+        line: 167
+        character: 39
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 167
+        character: 15
+      end:
+        line: 167
+        character: 39
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 168
+        character: 19
+      end:
+        line: 168
+        character: 74
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 1
+    range:
+      start:
+        line: 170
+        character: 10
+      end:
+        line: 174
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 170
+        character: 10
+      end:
+        line: 174
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 1
+    range:
+      start:
+        line: 175
+        character: 10
+      end:
+        line: 179
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '1'
+    severity: 0
+    range:
+      start:
+        line: 175
+        character: 10
+      end:
+        line: 179
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 1
+    range:
+      start:
+        line: 180
+        character: 10
+      end:
+        line: 184
+        character: 24
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '2'
+    severity: 0
+    range:
+      start:
+        line: 180
+        character: 10
+      end:
+        line: 184
+        character: 24
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 1
+    range:
+      start:
+        line: 185
+        character: 10
+      end:
+        line: 190
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '3'
+    severity: 0
+    range:
+      start:
+        line: 185
+        character: 10
+      end:
+        line: 190
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 1
+    range:
+      start:
+        line: 191
+        character: 10
+      end:
+        line: 196
+        character: 29
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '4'
+    severity: 0
+    range:
+      start:
+        line: 191
+        character: 10
+      end:
+        line: 196
+        character: 29
+  - code: openapi-components-parameters-description-error
+    message: Parameters MUST Have a Description
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 1
+    range:
+      start:
+        line: 197
+        character: 10
+      end:
+        line: 201
+        character: 25
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - parameters
+      - '5'
+    severity: 0
+    range:
+      start:
+        line: 197
+        character: 10
+      end:
+        line: 201
+        character: 25
+  - code: openapi-response-get-400-status-code-error
+    message: GET Responses MUST Have 400 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 202
+        character: 16
+      end:
+        line: 204
+        character: 42
+  - code: openapi-response-get-401-status-code-error
+    message: GET Responses Has 401 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 202
+        character: 16
+      end:
+        line: 204
+        character: 42
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 202
+        character: 16
+      end:
+        line: 204
+        character: 42
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 202
+        character: 16
+      end:
+        line: 204
+        character: 42
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 202
+        character: 16
+      end:
+        line: 204
+        character: 42
+  - code: openapi-response-get-200-content-error
+    message: GET 200 Response MUST Have Content.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 0
+    range:
+      start:
+        line: 203
+        character: 14
+      end:
+        line: 204
+        character: 42
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 203
+        character: 14
+      end:
+        line: 204
+        character: 42
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - >-
+        /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 204
+        character: 23
+      end:
+        line: 204
+        character: 42
