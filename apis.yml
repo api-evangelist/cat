@@ -4,7 +4,8 @@ apis:
   - aid: cat:cat
     name: CAT
     tags:
-      - API
+      - Heavy Equipment
+      - Construction
     humanURL: ' https://digital.cat.com/api-catalog-overview'
     properties:
       - url: ' https://digital.cat.com/api-catalog-overview'
