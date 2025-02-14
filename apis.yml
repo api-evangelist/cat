@@ -10,6 +10,8 @@ apis:
     properties:
       - url: ' https://digital.cat.com/api-catalog-overview'
         type: Documentation
+      - type: OpenAPI
+        url: properties/cat-openapi.yml
     description: >-
       Explore the different API catalog along with create processes list of APIs
       with documentation. Make use of the ability to subscribe and execute calls
