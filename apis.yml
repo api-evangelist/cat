@@ -20,16 +20,16 @@ name: CAT
 tags:
   - Heavy Equipment
   - Construction
-type: Index
+type: Contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2025-01-07'
 modified: '2025-02-27'
-position: Consumer
+position: Consuming
 description: >-
-  Explore the different API catalog along with create processes list of APIs
-  with documentation. Make use of the ability to subscribe and execute calls to
-  use different Cat digital products. 
+  Caterpillar Inc. is the worlds leading manufacturer of construction and
+  mining equipment, off-highway diesel and natural gas engines, industrial gas
+  turbines and diesel-electric locomotives.
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
