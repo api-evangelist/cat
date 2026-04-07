@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: Caterpillar Telematics API
+  title: CAT Caterpillar Telematics API
   description: API for Caterpillar-to-dealer data transfer
   version: 1.0.0
 servers:
@@ -9,7 +9,7 @@ servers:
 paths:
   /{pageNumber}:
     get:
-      summary: Get fleet snapshot
+      summary: CAT Get fleet snapshot
       description: Provides a snapshot view of the fleet.
       parameters:
         - name: pageNumber
@@ -22,7 +22,7 @@ paths:
           description: Successful response
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}:
     get:
-      summary: Get equipment snapshot
+      summary: CAT Get equipment snapshot
       description: Returns snapshot data for a single piece of equipment.
       parameters:
         - name: make
@@ -45,7 +45,7 @@ paths:
           description: Successful response
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
-      summary: Get fault codes
+      summary: CAT Get fault codes
       description: Retrieves fault code time-series data for an asset.
       parameters:
         - name: make
@@ -125,7 +125,7 @@ paths:
           description: Successful response
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
-      summary: Get switch status
+      summary: CAT Get switch status
       description: Retrieves switch status data of an asset.
       parameters:
         - name: make
@@ -165,7 +165,7 @@ paths:
           description: Successful response
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
-      summary: Get fuel remaining ratio
+      summary: CAT Get fuel remaining ratio
       description: Retrieves the fuel remaining ratio details of an asset.
       parameters:
         - name: make
