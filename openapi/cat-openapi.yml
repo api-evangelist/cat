@@ -43,6 +43,8 @@ paths:
       responses:
         '200':
           description: Successful response
+      tags:
+        - Equipment
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: CAT Get fault codes
@@ -83,6 +85,8 @@ paths:
       responses:
         '200':
           description: Successful response
+      tags:
+        - Equipment
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: Get location data
@@ -123,6 +127,8 @@ paths:
       responses:
         '200':
           description: Successful response
+      tags:
+        - Equipment
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: CAT Get switch status
@@ -163,6 +169,8 @@ paths:
       responses:
         '200':
           description: Successful response
+      tags:
+        - Equipment
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: CAT Get fuel remaining ratio
@@ -203,3 +211,7 @@ paths:
       responses:
         '200':
           description: Successful response
+      tags:
+        - Equipment
+tags:
+  - name: Equipment

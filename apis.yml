@@ -2,10 +2,10 @@ aid: cat
 url: https://raw.githubusercontent.com/api-evangelist/cat/refs/heads/main/apis.yml
 name: CAT
 tags:
-  - Heavy Equipment
   - Construction
-  - Locomotives
   - Equipment
+  - Heavy Equipment
+  - Locomotives
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -20,8 +20,8 @@ apis:
   - aid: cat:cat
     name: CAT Digital Marketplace API
     tags:
-      - Heavy Equipment
       - Construction
+      - Heavy Equipment
     humanURL: https://digital.cat.com/api-catalog-overview
     properties:
       - url: https://digital.cat.com/api-catalog-overview
