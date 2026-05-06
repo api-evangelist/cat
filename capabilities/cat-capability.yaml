@@ -1,0 +1,518 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: CAT Caterpillar Telematics API
+  description: API for Caterpillar-to-dealer data transfer
+  tags:
+  - Cat
+  - API
+  created: '2026-05-06'
+  modified: '2026-05-06'
+capability:
+  consumes:
+  - type: http
+    namespace: cat
+    baseUri: https://services.cat.com/telematics/iso15143
+    description: CAT Caterpillar Telematics API HTTP API.
+    resources:
+    - name: pagenumber
+      path: /{pageNumber}
+      operations:
+      - name: get-pagenumber
+        method: GET
+        description: CAT Get fleet snapshot
+        inputParameters:
+        - name: pageNumber
+          in: path
+          type: integer
+          required: true
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: equipment-makemodelserial-make-model-serialnumbe
+      path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      operations:
+      - name: get-equipment-makemodelserial-make-model-serialn
+        method: GET
+        description: CAT Get equipment snapshot
+        inputParameters:
+        - name: make
+          in: path
+          type: string
+          required: true
+        - name: model
+          in: path
+          type: string
+          required: true
+        - name: serialNumber
+          in: path
+          type: string
+          required: true
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: equipment-makemodelserial-make-model-serialnumbe
+      path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      operations:
+      - name: get-equipment-makemodelserial-make-model-serialn
+        method: GET
+        description: CAT Get fault codes
+        inputParameters:
+        - name: make
+          in: path
+          type: string
+          required: true
+        - name: model
+          in: path
+          type: string
+          required: true
+        - name: serialNumber
+          in: path
+          type: string
+          required: true
+        - name: startDateUTC
+          in: path
+          type: string
+          required: true
+        - name: endDateUTC
+          in: path
+          type: string
+          required: true
+        - name: pageNumber
+          in: path
+          type: integer
+          required: true
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: equipment-makemodelserial-make-model-serialnumbe
+      path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      operations:
+      - name: get-equipment-makemodelserial-make-model-serialn
+        method: GET
+        description: Get location data
+        inputParameters:
+        - name: make
+          in: path
+          type: string
+          required: true
+        - name: model
+          in: path
+          type: string
+          required: true
+        - name: serialNumber
+          in: path
+          type: string
+          required: true
+        - name: startDateUTC
+          in: path
+          type: string
+          required: true
+        - name: endDateUTC
+          in: path
+          type: string
+          required: true
+        - name: pageNumber
+          in: path
+          type: integer
+          required: true
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: equipment-makemodelserial-make-model-serialnumbe
+      path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      operations:
+      - name: get-equipment-makemodelserial-make-model-serialn
+        method: GET
+        description: CAT Get switch status
+        inputParameters:
+        - name: make
+          in: path
+          type: string
+          required: true
+        - name: model
+          in: path
+          type: string
+          required: true
+        - name: serialNumber
+          in: path
+          type: string
+          required: true
+        - name: startDateUTC
+          in: path
+          type: string
+          required: true
+        - name: endDateUTC
+          in: path
+          type: string
+          required: true
+        - name: pageNumber
+          in: path
+          type: integer
+          required: true
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: equipment-makemodelserial-make-model-serialnumbe
+      path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      operations:
+      - name: get-equipment-makemodelserial-make-model-serialn
+        method: GET
+        description: CAT Get fuel remaining ratio
+        inputParameters:
+        - name: make
+          in: path
+          type: string
+          required: true
+        - name: model
+          in: path
+          type: string
+          required: true
+        - name: serialNumber
+          in: path
+          type: string
+          required: true
+        - name: startDateUTC
+          in: path
+          type: string
+          required: true
+        - name: endDateUTC
+          in: path
+          type: string
+          required: true
+        - name: pageNumber
+          in: path
+          type: integer
+          required: true
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: cat-rest
+    description: REST adapter for CAT Caterpillar Telematics API.
+    resources:
+    - path: /{pageNumber}
+      name: get-pagenumber
+      operations:
+      - method: GET
+        name: get-pagenumber
+        description: CAT Get fleet snapshot
+        call: cat.get-pagenumber
+        with:
+          pageNumber: rest.pageNumber
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}
+      name: get-equipment-makemodelserial-make-model-serialn
+      operations:
+      - method: GET
+        name: get-equipment-makemodelserial-make-model-serialn
+        description: CAT Get equipment snapshot
+        call: cat.get-equipment-makemodelserial-make-model-serialn
+        with:
+          make: rest.make
+          model: rest.model
+          serialNumber: rest.serialNumber
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}
+      name: get-equipment-makemodelserial-make-model-serialn
+      operations:
+      - method: GET
+        name: get-equipment-makemodelserial-make-model-serialn
+        description: CAT Get fault codes
+        call: cat.get-equipment-makemodelserial-make-model-serialn
+        with:
+          make: rest.make
+          model: rest.model
+          serialNumber: rest.serialNumber
+          startDateUTC: rest.startDateUTC
+          endDateUTC: rest.endDateUTC
+          pageNumber: rest.pageNumber
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}
+      name: get-equipment-makemodelserial-make-model-serialn
+      operations:
+      - method: GET
+        name: get-equipment-makemodelserial-make-model-serialn
+        description: Get location data
+        call: cat.get-equipment-makemodelserial-make-model-serialn
+        with:
+          make: rest.make
+          model: rest.model
+          serialNumber: rest.serialNumber
+          startDateUTC: rest.startDateUTC
+          endDateUTC: rest.endDateUTC
+          pageNumber: rest.pageNumber
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}
+      name: get-equipment-makemodelserial-make-model-serialn
+      operations:
+      - method: GET
+        name: get-equipment-makemodelserial-make-model-serialn
+        description: CAT Get switch status
+        call: cat.get-equipment-makemodelserial-make-model-serialn
+        with:
+          make: rest.make
+          model: rest.model
+          serialNumber: rest.serialNumber
+          startDateUTC: rest.startDateUTC
+          endDateUTC: rest.endDateUTC
+          pageNumber: rest.pageNumber
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}
+      name: get-equipment-makemodelserial-make-model-serialn
+      operations:
+      - method: GET
+        name: get-equipment-makemodelserial-make-model-serialn
+        description: CAT Get fuel remaining ratio
+        call: cat.get-equipment-makemodelserial-make-model-serialn
+        with:
+          make: rest.make
+          model: rest.model
+          serialNumber: rest.serialNumber
+          startDateUTC: rest.startDateUTC
+          endDateUTC: rest.endDateUTC
+          pageNumber: rest.pageNumber
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: cat-mcp
+    transport: http
+    description: MCP adapter for CAT Caterpillar Telematics API for AI agent use.
+    tools:
+    - name: get-pagenumber
+      description: CAT Get fleet snapshot
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cat.get-pagenumber
+      with:
+        pageNumber: tools.pageNumber
+      inputParameters:
+      - name: pageNumber
+        type: integer
+        description: pageNumber
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-equipment-makemodelserial-make-model-serialn
+      description: CAT Get equipment snapshot
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cat.get-equipment-makemodelserial-make-model-serialn
+      with:
+        make: tools.make
+        model: tools.model
+        serialNumber: tools.serialNumber
+      inputParameters:
+      - name: make
+        type: string
+        description: make
+        required: true
+      - name: model
+        type: string
+        description: model
+        required: true
+      - name: serialNumber
+        type: string
+        description: serialNumber
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-equipment-makemodelserial-make-model-serialn
+      description: CAT Get fault codes
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cat.get-equipment-makemodelserial-make-model-serialn
+      with:
+        make: tools.make
+        model: tools.model
+        serialNumber: tools.serialNumber
+        startDateUTC: tools.startDateUTC
+        endDateUTC: tools.endDateUTC
+        pageNumber: tools.pageNumber
+      inputParameters:
+      - name: make
+        type: string
+        description: make
+        required: true
+      - name: model
+        type: string
+        description: model
+        required: true
+      - name: serialNumber
+        type: string
+        description: serialNumber
+        required: true
+      - name: startDateUTC
+        type: string
+        description: startDateUTC
+        required: true
+      - name: endDateUTC
+        type: string
+        description: endDateUTC
+        required: true
+      - name: pageNumber
+        type: integer
+        description: pageNumber
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-equipment-makemodelserial-make-model-serialn
+      description: Get location data
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cat.get-equipment-makemodelserial-make-model-serialn
+      with:
+        make: tools.make
+        model: tools.model
+        serialNumber: tools.serialNumber
+        startDateUTC: tools.startDateUTC
+        endDateUTC: tools.endDateUTC
+        pageNumber: tools.pageNumber
+      inputParameters:
+      - name: make
+        type: string
+        description: make
+        required: true
+      - name: model
+        type: string
+        description: model
+        required: true
+      - name: serialNumber
+        type: string
+        description: serialNumber
+        required: true
+      - name: startDateUTC
+        type: string
+        description: startDateUTC
+        required: true
+      - name: endDateUTC
+        type: string
+        description: endDateUTC
+        required: true
+      - name: pageNumber
+        type: integer
+        description: pageNumber
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-equipment-makemodelserial-make-model-serialn
+      description: CAT Get switch status
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cat.get-equipment-makemodelserial-make-model-serialn
+      with:
+        make: tools.make
+        model: tools.model
+        serialNumber: tools.serialNumber
+        startDateUTC: tools.startDateUTC
+        endDateUTC: tools.endDateUTC
+        pageNumber: tools.pageNumber
+      inputParameters:
+      - name: make
+        type: string
+        description: make
+        required: true
+      - name: model
+        type: string
+        description: model
+        required: true
+      - name: serialNumber
+        type: string
+        description: serialNumber
+        required: true
+      - name: startDateUTC
+        type: string
+        description: startDateUTC
+        required: true
+      - name: endDateUTC
+        type: string
+        description: endDateUTC
+        required: true
+      - name: pageNumber
+        type: integer
+        description: pageNumber
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-equipment-makemodelserial-make-model-serialn
+      description: CAT Get fuel remaining ratio
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cat.get-equipment-makemodelserial-make-model-serialn
+      with:
+        make: tools.make
+        model: tools.model
+        serialNumber: tools.serialNumber
+        startDateUTC: tools.startDateUTC
+        endDateUTC: tools.endDateUTC
+        pageNumber: tools.pageNumber
+      inputParameters:
+      - name: make
+        type: string
+        description: make
+        required: true
+      - name: model
+        type: string
+        description: model
+        required: true
+      - name: serialNumber
+        type: string
+        description: serialNumber
+        required: true
+      - name: startDateUTC
+        type: string
+        description: startDateUTC
+        required: true
+      - name: endDateUTC
+        type: string
+        description: endDateUTC
+        required: true
+      - name: pageNumber
+        type: integer
+        description: pageNumber
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
