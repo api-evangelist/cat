@@ -1,0 +1,75 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: CAT Caterpillar Telematics API
+  description: 'CAT Caterpillar Telematics API. 1 operations. Lead operation: CAT Get fleet snapshot. Self-contained Naftiko
+    capability covering one Cat business surface.'
+  tags:
+  - Cat
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    CAT_API_KEY: CAT_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: cat-general
+    baseUri: https://services.cat.com/telematics/iso15143
+    description: CAT Caterpillar Telematics API business capability. Self-contained, no shared references.
+    resources:
+    - name: pageNumber
+      path: /{pageNumber}
+      operations:
+      - name: get
+        method: GET
+        description: CAT Get fleet snapshot
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: pageNumber
+          in: path
+          type: integer
+          required: true
+  exposes:
+  - type: rest
+    namespace: cat-general-rest
+    port: 8080
+    description: REST adapter for CAT Caterpillar Telematics API. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/{pagenumber}
+      name: pagenumber
+      description: REST surface for pageNumber.
+      operations:
+      - method: GET
+        name: get
+        description: CAT Get fleet snapshot
+        call: cat-general.get
+        with:
+          pageNumber: rest.pageNumber
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: cat-general-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for CAT Caterpillar Telematics API. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: cat-get-fleet-snapshot
+      description: CAT Get fleet snapshot
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cat-general.get
+      with:
+        pageNumber: tools.pageNumber
+      outputParameters:
+      - type: object
+        mapping: $.
