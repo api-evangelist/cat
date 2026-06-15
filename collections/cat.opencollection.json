@@ -1,0 +1,244 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "CAT Caterpillar Telematics API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Default",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "CAT Get fleet snapshot",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://services.cat.com/telematics/iso15143/:pageNumber",
+            "params": [
+              {
+                "name": "pageNumber",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Provides a snapshot view of the fleet."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Equipment",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "CAT Get equipment snapshot",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://services.cat.com/telematics/iso15143/equipment/makeModelSerial/:make/:model/:serialNumber",
+            "params": [
+              {
+                "name": "make",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "model",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "serialNumber",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Returns snapshot data for a single piece of equipment."
+        },
+        {
+          "info": {
+            "name": "CAT Get fault codes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://services.cat.com/telematics/iso15143/equipment/makeModelSerial/:make/:model/:serialNumber/faults/:startDateUTC/:endDateUTC/:pageNumber",
+            "params": [
+              {
+                "name": "make",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "model",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "serialNumber",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "startDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "endDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "pageNumber",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieves fault code time-series data for an asset."
+        },
+        {
+          "info": {
+            "name": "Get location data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://services.cat.com/telematics/iso15143/equipment/makeModelSerial/:make/:model/:serialNumber/locations/:startDateUTC/:endDateUTC/:pageNumber",
+            "params": [
+              {
+                "name": "make",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "model",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "serialNumber",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "startDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "endDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "pageNumber",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Returns location details of a given asset."
+        },
+        {
+          "info": {
+            "name": "CAT Get switch status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://services.cat.com/telematics/iso15143/equipment/makeModelSerial/:make/:model/:serialNumber/switchStatus/:startDateUTC/:endDateUTC/:pageNumber",
+            "params": [
+              {
+                "name": "make",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "model",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "serialNumber",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "startDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "endDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "pageNumber",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieves switch status data of an asset."
+        },
+        {
+          "info": {
+            "name": "CAT Get fuel remaining ratio",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://services.cat.com/telematics/iso15143/equipment/makeModelSerial/:make/:model/:serialNumber/fuelRemainingRatio/:startDateUTC/:endDateUTC/:pageNumber",
+            "params": [
+              {
+                "name": "make",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "model",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "serialNumber",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "startDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "endDateUTC",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "pageNumber",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieves the fuel remaining ratio details of an asset."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
