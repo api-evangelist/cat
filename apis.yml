@@ -45,6 +45,8 @@ apis:
       Coverage includes fleet and asset management, telematics (VisionLink), fuel and utilization data, hours/odometer
       events, and geofencing.
 common:
+  - type: AgenticAccess
+    url: agentic-access/cat-agentic-access.yml
   - type: DomainSecurity
     url: security/cat-domain-security.yml
   - type: LinkedIn
