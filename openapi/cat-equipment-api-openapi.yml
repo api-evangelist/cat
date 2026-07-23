@@ -1,0 +1,204 @@
+openapi: 3.1.0
+info:
+  title: CAT Caterpillar Telematics CAT Caterpillar Telematics API Equipment API
+  description: API for Caterpillar-to-dealer data transfer
+  version: 1.0.0
+servers:
+- url: https://services.cat.com/telematics/iso15143
+  description: Production server
+tags:
+- name: Equipment
+paths:
+  /equipment/makeModelSerial/{make}/{model}/{serialNumber}:
+    get:
+      summary: CAT Get equipment snapshot
+      description: Returns snapshot data for a single piece of equipment.
+      parameters:
+      - name: make
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: model
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: serialNumber
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Successful response
+      tags:
+      - Equipment
+  /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}:
+    get:
+      summary: CAT Get fault codes
+      description: Retrieves fault code time-series data for an asset.
+      parameters:
+      - name: make
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: model
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: serialNumber
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: startDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: endDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: pageNumber
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      tags:
+      - Equipment
+  /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}:
+    get:
+      summary: Get location data
+      description: Returns location details of a given asset.
+      parameters:
+      - name: make
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: model
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: serialNumber
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: startDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: endDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: pageNumber
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      tags:
+      - Equipment
+  /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}:
+    get:
+      summary: CAT Get switch status
+      description: Retrieves switch status data of an asset.
+      parameters:
+      - name: make
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: model
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: serialNumber
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: startDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: endDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: pageNumber
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      tags:
+      - Equipment
+  /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}:
+    get:
+      summary: CAT Get fuel remaining ratio
+      description: Retrieves the fuel remaining ratio details of an asset.
+      parameters:
+      - name: make
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: model
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: serialNumber
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: startDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: endDateUTC
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: pageNumber
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      tags:
+      - Equipment

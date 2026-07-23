@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: CAT Caterpillar Telematics CAT Caterpillar Telematics API API
+  description: API for Caterpillar-to-dealer data transfer
+  version: 1.0.0
+servers:
+- url: https://services.cat.com/telematics/iso15143
+  description: Production server
+tags:
+- name: CAT Caterpillar Telematics API
+paths:
+  /{pageNumber}:
+    get:
+      summary: CAT Get fleet snapshot
+      description: Provides a snapshot view of the fleet.
+      parameters:
+      - name: pageNumber
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      tags:
+      - CAT Caterpillar Telematics API
