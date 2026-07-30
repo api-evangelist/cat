@@ -11,7 +11,19 @@ tags:
   - Mining
   - Telematics
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cat.png
 access: 3rd-Party
 created: '2025-01-07'
 modified: '2026-05-19'
@@ -22,28 +34,37 @@ description: >-
   diesel-electric locomotives. Cat Digital publishes a public API catalog at digital.cat.com that exposes fleet, asset,
   telematics, and fuel data APIs built on the Cat Connect and VisionLink platforms.
 apis:
-  - aid: cat:cat-digital-marketplace-api
-    name: CAT Digital Marketplace API
-    tags:
-      - Assets
-      - Construction
-      - Heavy Equipment
-      - Telematics
-      - VisionLink
-    humanURL: https://digital.cat.com/api-catalog-overview
-    properties:
-      - url: https://digital.cat.com/api-catalog-overview
-        type: Documentation
-      - url: openapi/cat-openapi.yml
-        type: OpenAPI
-      - url: https://digital.cat.com/
-        type: Portal
-      - url: https://digital.cat.com/release-notes-manager
-        type: ChangeLog
-    description: >-
-      Explore the Cat Digital API catalog, subscribe to APIs, and execute calls against the Cat Digital products.
-      Coverage includes fleet and asset management, telematics (VisionLink), fuel and utilization data, hours/odometer
-      events, and geofencing.
+- aid: cat:cat-cat-caterpillar-telematics-api-api
+  name: CAT CAT Caterpillar Telematics API API
+  description: >-
+    The CAT Caterpillar Telematics API API from CAT — 1 operation(s) for cat caterpillar telematics api.
+  humanURL: https://digital.cat.com/api-catalog-overview
+  tags:
+  - CAT Caterpillar Telematics API
+  properties:
+  - type: OpenAPI
+    url: openapi/cat-cat-caterpillar-telematics-api-api-openapi.yml
+  - type: Documentation
+    url: https://digital.cat.com/api-catalog-overview
+  - type: Portal
+    url: https://digital.cat.com/
+  - type: ChangeLog
+    url: https://digital.cat.com/release-notes-manager
+- aid: cat:cat-equipment-api
+  name: CAT Equipment API
+  description: The Equipment API from CAT — 5 operation(s) for equipment.
+  humanURL: https://digital.cat.com/api-catalog-overview
+  tags:
+  - Equipment
+  properties:
+  - type: OpenAPI
+    url: openapi/cat-equipment-api-openapi.yml
+  - type: Documentation
+    url: https://digital.cat.com/api-catalog-overview
+  - type: Portal
+    url: https://digital.cat.com/
+  - type: ChangeLog
+    url: https://digital.cat.com/release-notes-manager
 common:
   - type: AgenticAccess
     url: agentic-access/cat-agentic-access.yml
