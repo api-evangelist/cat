@@ -1,0 +1,16 @@
+{
+  "provider": "cat",
+  "sources": [
+    "cat-cat-caterpillar-telematics-api-api-openapi.yml",
+    "cat-equipment-api-openapi.yml"
+  ],
+  "outputs": [
+    "cat-cat-caterpillar-telematics-api-api-openapi.yml",
+    "cat-equipment-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
