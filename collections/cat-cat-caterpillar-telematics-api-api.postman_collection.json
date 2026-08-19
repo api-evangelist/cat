@@ -1,0 +1,106 @@
+{
+  "item": [
+    {
+      "id": "02d85df8-344b-4951-b270-cc790530e5f0",
+      "name": "CAT Caterpillar Telematics API",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "655ad19c-19c4-4da2-87f7-4bd71ba5cece",
+          "name": "CAT Get fleet snapshot",
+          "request": {
+            "name": "CAT Get fleet snapshot",
+            "description": {
+              "content": "Provides a snapshot view of the fleet.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ":pageNumber"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "pageNumber",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a4f5d630-2f27-407c-a616-188c99ba1a6f",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":pageNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "pageNumber",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://services.cat.com/telematics/iso15143",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "f54fc97e-43d9-4773-a9a4-a0f934b62e5c",
+    "name": "CAT Caterpillar Telematics CAT Caterpillar Telematics API API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "API for Caterpillar-to-dealer data transfer",
+      "type": "text/plain"
+    }
+  }
+}

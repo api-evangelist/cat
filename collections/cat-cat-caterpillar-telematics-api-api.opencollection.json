@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "CAT Caterpillar Telematics CAT Caterpillar Telematics API API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "CAT Caterpillar Telematics API",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "CAT Get fleet snapshot",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://services.cat.com/telematics/iso15143/:pageNumber",
+            "params": [
+              {
+                "name": "pageNumber",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Provides a snapshot view of the fleet."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
