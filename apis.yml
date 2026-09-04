@@ -39,7 +39,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cat.png
 access: 3rd-Party
 created: '2025-01-07'
 modified: '2026-05-19'
-position: Consumer
+position: Consuming
 description: >-
   CAT is the brand name and ticker symbol for Caterpillar Inc. (NYSE: CAT), the world's leading manufacturer of
   construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and
