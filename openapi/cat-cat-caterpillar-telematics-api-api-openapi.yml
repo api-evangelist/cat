@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: CAT Caterpillar Telematics CAT Caterpillar Telematics API API
+  title: CAT Caterpillar Telematics API
   description: API for Caterpillar-to-dealer data transfer
   version: 1.0.0
 servers:
@@ -24,3 +24,5 @@ paths:
           description: Successful response
       tags:
       - CAT Caterpillar Telematics API
+      operationId: getByPageNumber
+      x-operation-id-source: derived

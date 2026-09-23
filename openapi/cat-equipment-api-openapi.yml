@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: CAT Caterpillar Telematics CAT Caterpillar Telematics API Equipment API
+  title: CAT Caterpillar Telematics Equipment API
   description: API for Caterpillar-to-dealer data transfer
   version: 1.0.0
 servers:
@@ -34,6 +34,8 @@ paths:
           description: Successful response
       tags:
       - Equipment
+      operationId: getEquipmentMakeModelSerialByMakeByModelBySerialNumber
+      x-operation-id-source: derived
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/faults/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: CAT Get fault codes
@@ -76,6 +78,8 @@ paths:
           description: Successful response
       tags:
       - Equipment
+      operationId: getEquipmentMakeModelSerialByMakeByModelBySerialNumberFaultsByStartDateUTCByEndDateUTCByPageNumber
+      x-operation-id-source: derived
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/locations/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: Get location data
@@ -118,6 +122,8 @@ paths:
           description: Successful response
       tags:
       - Equipment
+      operationId: getEquipmentMakeModelSerialByMakeByModelBySerialNumberLocationsByStartDateUTCByEndDateUTCByPageNumber
+      x-operation-id-source: derived
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/switchStatus/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: CAT Get switch status
@@ -160,6 +166,8 @@ paths:
           description: Successful response
       tags:
       - Equipment
+      operationId: getEquipmentMakeModelSerialByMakeByModelBySerialNumberSwitchStatusByStartDateUTCByEndDateUTCByPageNumber
+      x-operation-id-source: derived
   /equipment/makeModelSerial/{make}/{model}/{serialNumber}/fuelRemainingRatio/{startDateUTC}/{endDateUTC}/{pageNumber}:
     get:
       summary: CAT Get fuel remaining ratio
@@ -202,3 +210,5 @@ paths:
           description: Successful response
       tags:
       - Equipment
+      operationId: getEquipmentMakeModelSerialByMakeByModelBySerialNumberFuelRemainingRatioByStartDateUTCByEndDateUTCByPageNumber
+      x-operation-id-source: derived
