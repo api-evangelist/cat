@@ -1,4 +1,4 @@
-# CAT (cat)
+# CAT
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,74 +66,117 @@
 
 CAT is the brand name and ticker symbol for Caterpillar Inc. (NYSE: CAT), the world's leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives. Cat Digital publishes a public API catalog at digital.cat.com that exposes fleet, asset, telematics, and fuel data APIs built on the Cat Connect and VisionLink platforms.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cat/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cat/refs/heads/main/apis.yml)
+**Areas:** Construction · Engines · Equipment · Heavy Equipment · Locomotives · Manufacturing · Mining · Telematics
 
-## Scope
+## CAT on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for CAT is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cat/](https://apis.io/providers/cat/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- Construction
-- Engines
-- Equipment
-- Heavy Equipment
-- Locomotives
-- Manufacturing
-- Mining
-- Telematics
+- [CAT Caterpillar Telematics API](https://apis.io/apis/cat/cat-cat-caterpillar-telematics-api-api/) — The CAT Caterpillar Telematics API API from CAT — 1 operation(s) for cat caterpillar telematics api.
+- [CAT Equipment API](https://apis.io/apis/cat/cat-equipment-api/) — The Equipment API from CAT — 5 operation(s) for equipment.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-01-07
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### CAT Digital Marketplace API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Explore the Cat Digital API catalog, subscribe to APIs, and execute calls against the Cat Digital products. Coverage includes fleet and asset management, telematics (VisionLink), fuel and utilization data, hours/odometer events, and geofencing.
+- [Cat Agentic Access](https://apis.io/agentic-access/cat/cat-agentic-access/)
 
-- **Human URL:** [https://digital.cat.com/api-catalog-overview](https://digital.cat.com/api-catalog-overview)
+#### Collections (3)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Assets
-- Construction
-- Heavy Equipment
-- Telematics
-- VisionLink
+- [CAT Caterpillar Telematics API](https://apis.io/collections/cat/open-cat/)
+- [CAT Caterpillar Telematics CAT Caterpillar Telematics API API](https://apis.io/collections/cat/open-cat-cat-caterpillar-telematics-api-api/)
+- [CAT Caterpillar Telematics CAT Caterpillar Telematics API Equipment API](https://apis.io/collections/cat/open-cat-equipment-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://digital.cat.com/api-catalog-overview)
-- [OpenAPI](openapi/cat-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cat.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cat.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Portal](https://digital.cat.com/)
-- [Changelog](https://digital.cat.com/release-notes-manager)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Cat Domain Security](https://apis.io/security/cat/cat-domain-security/)
 
-- [LinkedIn](https://www.linkedin.com/company/caterpillar-inc)
-- [Portal](https://digital.cat.com/)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Cat Plans Pricing](https://apis.io/plans/cat/cat-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Cat Rate Limits](https://apis.io/rate-limits/cat/cat-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Cat Finops](https://apis.io/finops/cat/cat-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.cat.com/)
-- [Login](https://digital.cat.com/)
-- [Applications](https://digital.cat.com/applications)
-- [F A Q](https://digital.cat.com/knowledge-hub/faq)
-- [News](https://digital.cat.com/news-announcements-list)
 - [Changelog](https://digital.cat.com/release-notes-manager)
-- [Terms of Service](https://digital.cat.com/legal)
-- [Privacy Policy](https://digital.cat.com/privacy)
-- [Investor Relations](https://www.caterpillar.com/en/investors.html)
-- [Press Releases](https://www.caterpillar.com/en/news.html)
-- [Careers](https://www.caterpillar.com/en/careers.html)
-- [Features](undefined)
-- [Use Cases](undefined)
+- [Terms of service](https://digital.cat.com/legal)
+- [Privacy policy](https://digital.cat.com/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 31.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.0 |
+| Contract quality | 42.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 42.1 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cat/](https://apis.io/providers/cat/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CAT: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cat/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
